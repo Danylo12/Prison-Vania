@@ -629,7 +629,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.22761656, g: 0.34088096, b: 0.5188679, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -9918,6 +9918,8 @@ MonoBehaviour:
   - m_Hash: 256545655
     m_ParentHash: 756556552
   - m_Hash: -725336713
+    m_ParentHash: 756556552
+  - m_Hash: -889202739
     m_ParentHash: 756556552
 --- !u!1 &2046096917
 GameObject:
@@ -32138,6 +32140,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
+      propertyPath: cams
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
+      propertyPath: deathkick.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
+      propertyPath: deathkick.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7077463211464666609, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.73
@@ -32178,10 +32192,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8937521073993397604, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 75cd3a026b57543a682df0881d4f4568, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
