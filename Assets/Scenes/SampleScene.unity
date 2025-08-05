@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 499128073}
   m_Layer: 11
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1320,6 +1320,11 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!4 &629862194 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7365215296306700194, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
+  m_PrefabInstance: {fileID: 4971531413575465453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &698344139
 GameObject:
   m_ObjectHideFlags: 0
@@ -33884,17 +33889,13 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
-      propertyPath: cams
+      propertyPath: gun
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 629862194}
     - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
-      propertyPath: deathkick.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
-      propertyPath: deathkick.y
-      value: 20
-      objectReference: {fileID: 0}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4548854521239392907, guid: 7618e128666ee47ed86023d92150ecd1, type: 3}
     - target: {fileID: 7077463211464666609, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.44

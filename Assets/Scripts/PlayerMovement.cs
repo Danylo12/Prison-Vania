@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isAlive = true;
     [SerializeField] Vector2 deathkick = new Vector2(20f, 20f);
+
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
     
 
 
@@ -41,6 +44,13 @@ public class PlayerMovement : MonoBehaviour
         ClimbLadder();
         Die();
 
+    }
+
+    void OnFire(InputValue value)
+    {
+        if (!isAlive) {return; }
+
+        Instantiate(bullet, gun.position, transform.rotation);
     }
 
     void OnMove(InputValue value)
