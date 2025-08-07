@@ -11,16 +11,16 @@ public class PlayerMovement : MonoBehaviour
     private Animator myAnimator;
     private CapsuleCollider2D myBodyCollider2D;
     private BoxCollider2D myFeetCollider2D;
-    [SerializeField] float RunSpeed = 8f;
-    [SerializeField] float JumpSpeed = 25f;
-    [SerializeField] float ClimbSpeed = 6f;
+    [SerializeField] float RunSpeed = 7f;
+    [SerializeField] float JumpSpeed = 22f;
+    [SerializeField] float ClimbSpeed = 5f;
     private float gravityScaleOnStart;
 
     private bool isAlive = true;
-    [SerializeField] Vector2 deathkick = new Vector2(20f, 20f);
 
     [SerializeField] GameObject bullet;
     [SerializeField] Transform gun;
+    [SerializeField] CameraShaking cam;
     
 
 
@@ -113,8 +113,10 @@ public class PlayerMovement : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
-            myRigidbody.velocity = deathkick;
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
+            cam.Shake();
+            
         }
     }
 }
+

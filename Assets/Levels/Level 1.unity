@@ -3409,6 +3409,17 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1208826353 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5064297806131363222, guid: 80aeabfc2941b40eebd002d13ebc2d84, type: 3}
+  m_PrefabInstance: {fileID: 1870728374702273808}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54729a8705bd1457186025bf3996930c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1335890844
 GameObject:
   m_ObjectHideFlags: 0
@@ -7600,14 +7611,6 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 4971531413575465461}
-    - target: {fileID: 1846511457322445772, guid: 80aeabfc2941b40eebd002d13ebc2d84, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -50.14774
-      objectReference: {fileID: 0}
-    - target: {fileID: 1846511457322445772, guid: 80aeabfc2941b40eebd002d13ebc2d84, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.719545
-      objectReference: {fileID: 0}
     - target: {fileID: 3090049659118131875, guid: 80aeabfc2941b40eebd002d13ebc2d84, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
@@ -7729,6 +7732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 5424207383538538819, guid: 7df2781214b9144dca839c974f616162, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7746,13 +7753,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1208826353}
     - target: {fileID: 7077463211464666609, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -54.26
+      value: -54.03
       objectReference: {fileID: 0}
     - target: {fileID: 7077463211464666609, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.6
+      value: 8.62
       objectReference: {fileID: 0}
     - target: {fileID: 7077463211464666609, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
       propertyPath: m_LocalPosition.z
