@@ -1198,11 +1198,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!4 &629862194 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7365215296306700194, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
-  m_PrefabInstance: {fileID: 4971531413575465453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &692300161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34514,11 +34509,11 @@ PrefabInstance:
       objectReference: {fileID: 4971531413575465461}
     - target: {fileID: 1846511457322445772, guid: 80aeabfc2941b40eebd002d13ebc2d84, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.921797
+      value: 15.020441
       objectReference: {fileID: 0}
     - target: {fileID: 1846511457322445772, guid: 80aeabfc2941b40eebd002d13ebc2d84, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.6024776
+      value: 6.5595126
       objectReference: {fileID: 0}
     - target: {fileID: 3090049659118131875, guid: 80aeabfc2941b40eebd002d13ebc2d84, type: 3}
       propertyPath: m_BoundingShape2D
@@ -34609,17 +34604,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80aeabfc2941b40eebd002d13ebc2d84, type: 3}
---- !u!114 &1870728374702273809 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5064297806131363222, guid: 80aeabfc2941b40eebd002d13ebc2d84, type: 3}
-  m_PrefabInstance: {fileID: 1870728374702273808}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54729a8705bd1457186025bf3996930c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4971531413575465453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34632,18 +34616,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 1870728374702273809}
-    - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
-      propertyPath: gun
-      value: 
-      objectReference: {fileID: 629862194}
-    - target: {fileID: 2027750587605096116, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 4548854521239392907, guid: 7618e128666ee47ed86023d92150ecd1, type: 3}
     - target: {fileID: 7077463211464666609, guid: bc3498d9ceaca4bf183dd420e384c802, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.78

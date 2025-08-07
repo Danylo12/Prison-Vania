@@ -20,11 +20,14 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] GameObject bullet;
     [SerializeField] Transform gun;
-    [SerializeField] CameraShaking cam;
+    [SerializeField] AudioClip deathSFX;
+    
+    
+    
     
 
 
-    void Start() 
+    void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
@@ -113,10 +116,18 @@ public class PlayerMovement : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
-            FindObjectOfType<GameSession>().ProcessPlayerDeath();
-            cam.Shake();
-            
+            FindObjectOfType<CameraShaking>().Shake();
+            StartCoroutine(DelayedReload());
         }
     }
+    
+    IEnumerator DelayedReload()
+    {
+        AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position);
+        yield return new WaitForSeconds(0.6f);
+        FindObjectOfType<GameSession>().ProcessPlayerDeath();
+    }
+
+
 }
 
